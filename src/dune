@@ -1,0 +1,3 @@
+(executable
+ (public_name example3)
+ (libraries lablgtk3-sourceview3))
