@@ -1,0 +1,15 @@
+sudo: required
+language: nix
+os: osx
+
+branches:
+  only:
+  - master
+notifications:
+  email:
+  - false
+
+script:
+- nix-shell --pure --run 'echo done'
+- nix-build
+
