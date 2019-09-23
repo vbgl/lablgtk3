@@ -1,5 +1,5 @@
 { pkgs ?
-  import (fetchTarball "https://github.com/NixOS/nixpkgs/tarball/e740b88c00489273023bd2227ede0056aff42d93") {}
+  import (fetchTarball "https://github.com/NixOS/nixpkgs/tarball/65a1b179f3786a8ed00d8985bb5a3dccc1d73aa8") {}
 }:
 
 with pkgs;
