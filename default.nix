@@ -1,4 +1,8 @@
-with import <nixpkgs> {};
+{ pkgs ?
+  import (fetchTarball "https://github.com/NixOS/nixpkgs/tarball/e740b88c00489273023bd2227ede0056aff42d93") {}
+}:
+
+with pkgs;
 
 let inherit (ocamlPackages) buildDunePackage lablgtk3-sourceview3
 ; in
