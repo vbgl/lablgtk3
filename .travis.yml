@@ -11,5 +11,6 @@ notifications:
 
 script:
 - nix-shell --pure --run 'echo done'
+- nix-shell --pure --run 'pkg-config --list-all|sort'
 - nix-build
 
